@@ -8,13 +8,16 @@
         <language>zh-cn</language>
         <copyright>loml717</copyright>
         <lastBuildDate>Tue, 24 Sep 2024 15:21:22 +0800</lastBuildDate><atom:link href="https://loml717.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Title</title>
-        <link>https://loml717.github.io/p/title/</link>
+        <title>HelloWorld</title>
+        <link>https://loml717.github.io/p/helloworld/</link>
         <pubDate>Tue, 24 Sep 2024 15:21:22 +0800</pubDate>
         
-        <guid>https://loml717.github.io/p/title/</guid>
+        <guid>https://loml717.github.io/p/helloworld/</guid>
         <description>&lt;h1 id=&#34;hello-world-&#34;&gt;Hello World ！
-&lt;/h1&gt;</description>
+&lt;/h1&gt;&lt;p&gt;该博客创建方式，点击链接了解&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugohugo--github-%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://letere-gzj.github.io/hugo-stack/p/hugohugo--github-%E5%85%8D%E8%B4%B9%E9%83%A8%E7%BD%B2%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>归档</title>
