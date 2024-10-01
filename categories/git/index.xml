@@ -36,7 +36,161 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;新建版本库&#34;&gt;新建版本库
-&lt;/h2&gt;</description>
+&lt;/h2&gt;&lt;p&gt;创建仓库的两种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本地创建仓库：&lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;通过添加参数，如 &lt;code&gt;git init my-repo&lt;/code&gt; 则会创建一个名为 my-repo 的仓库&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过 &lt;code&gt;git init&lt;/code&gt; 初始化本地仓库后，git 会在当前文件夹下创建 .git 文件夹，用于保存该文件夹的仓库信息，并表明该文件夹为一个仓库。删除 .git 文件夹，则表明该文件夹不是仓库。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93.png&#34;
+	width=&#34;1258&#34;
+	height=&#34;244&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93_hu9586326607969133416.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E5%88%9D%E5%A7%8B%E5%8C%96%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93_hu3950280678455723763.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;515&#34;
+		data-flex-basis=&#34;1237px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从远程服务器克隆一个仓库：&lt;code&gt;git clone&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git clone &amp;lt;远程仓库地址&amp;gt; 即可将远程仓库创建至本地&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;git的工作区域和文件状态&#34;&gt;Git的工作区域和文件状态
+&lt;/h2&gt;&lt;p&gt;Git 的数据管理可分为三个区域：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;工作区：实际操作的目录，.git 所在的目录&lt;/li&gt;
+&lt;li&gt;暂存区：临时存放即将提交的修改内容&lt;/li&gt;
+&lt;li&gt;本地仓库：Git 存储代码的版本信息的主要位置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Git 文件中的几种状态：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;未跟踪：新创建的尚未被 git 管理&lt;/li&gt;
+&lt;li&gt;未修改：被 git 管理，但内容没有变化&lt;/li&gt;
+&lt;li&gt;已修改：修改了，尚未添加至暂存区&lt;/li&gt;
+&lt;li&gt;已暂存：修改后添加到暂存区&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81.png&#34;
+	width=&#34;2156&#34;
+	height=&#34;1079&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81_hu7696283050929269719.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E6%96%87%E4%BB%B6%E7%8A%B6%E6%80%81_hu13697550523304496684.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;479px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;git-基本使用语法&#34;&gt;Git 基本使用语法
+&lt;/h2&gt;&lt;h3 id=&#34;git-status&#34;&gt;git status
+&lt;/h3&gt;&lt;p&gt;查看仓库的状态&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E4%BB%93%E5%BA%93%E7%8A%B6%E6%80%81.png&#34;
+	width=&#34;1264&#34;
+	height=&#34;368&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E4%BB%93%E5%BA%93%E7%8A%B6%E6%80%81_hu10008576932167673638.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E4%BB%93%E5%BA%93%E7%8A%B6%E6%80%81_hu14648367488950203436.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;343&#34;
+		data-flex-basis=&#34;824px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Untracked files：文件为跟踪，表示文件处于工作区&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;git-add&#34;&gt;git add
+&lt;/h3&gt;&lt;p&gt;将文件添加到暂存区&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E4%BB%93%E5%BA%93%E7%8A%B6%E6%80%812.png&#34;
+	width=&#34;1070&#34;
+	height=&#34;332&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E4%BB%93%E5%BA%93%E7%8A%B6%E6%80%812_hu15601156070930759228.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E4%BB%93%E5%BA%93%E7%8A%B6%E6%80%812_hu4619398341199028392.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;322&#34;
+		data-flex-basis=&#34;773px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;文件显示为绿色时，代表文件存放在暂存区&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意！！！ 使用 &lt;code&gt;git rm --cache &amp;lt;file&amp;gt;&lt;/code&gt; 可以将文件从暂存区撤回工作区&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;git-commit&#34;&gt;git commit
+&lt;/h3&gt;&lt;p&gt;提交文件到仓库中（将暂存区中的文件提交到仓库中）&lt;/p&gt;
+&lt;p&gt;-m 参数：该参数用于描述提交的信息。建议每次提交都带上，否则会强制进入文本输入（eg：vim）要求你输入信息&lt;/p&gt;
+&lt;h3 id=&#34;git-log&#34;&gt;git log
+&lt;/h3&gt;&lt;p&gt;用于查看提交记录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95.png&#34;
+	width=&#34;1356&#34;
+	height=&#34;436&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95_hu5836693182275284003.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95_hu6224861262995671892.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;311&#34;
+		data-flex-basis=&#34;746px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;使用参数 &lt;code&gt;git log --oneline&lt;/code&gt; 仅显示提交的 ID 和提交信息&lt;/p&gt;
+&lt;h2 id=&#34;回退版本&#34;&gt;回退版本
+&lt;/h2&gt;&lt;h3 id=&#34;git-reset---soft&#34;&gt;git reset &amp;ndash;soft
+&lt;/h3&gt;&lt;p&gt;回退到某一个版本，并且保留工作区和暂存区的所有修改内容&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset_soft.png&#34;
+	width=&#34;2164&#34;
+	height=&#34;1430&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset_soft_hu1920477276732208150.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset_soft_hu9170082774352484769.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;git-reset---hard&#34;&gt;git reset &amp;ndash;hard
+&lt;/h3&gt;&lt;p&gt;回退到某一个版本，并且丢弃工作区和暂存区的所有修改内容&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset_hard.png&#34;
+	width=&#34;1612&#34;
+	height=&#34;1152&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset_hard_hu13917093230682029782.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset_hard_hu8392761666997332459.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;139&#34;
+		data-flex-basis=&#34;335px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;git-reset---mixed&#34;&gt;git reset &amp;ndash;mixed
+&lt;/h3&gt;&lt;p&gt;默认参数&lt;/p&gt;
+&lt;p&gt;回退到某一个版本，保存工作区的修改内容，丢弃暂存区的修改内容&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset.png&#34;
+	width=&#34;1528&#34;
+	height=&#34;1158&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset_hu16344890979074493623.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_reset_hu8545435006585940121.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;316px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;git-reflog&#34;&gt;git reflog
+&lt;/h3&gt;&lt;p&gt;查看操作的历史记录，可借助操作的历史记录和 &lt;code&gt;git reset --hard&lt;/code&gt; 回溯到之前某一个误操作的命令之前&lt;/p&gt;
+</description>
         </item>
         
     </channel>
