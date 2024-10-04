@@ -109,6 +109,10 @@
 		data-flex-basis=&#34;824px&#34;
 	
 &gt;&lt;/p&gt;
+&lt;p&gt;参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-s：表示简略模式显示仓库状态，&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Untracked files：文件为跟踪，表示文件处于工作区&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;git-add&#34;&gt;git add
 &lt;/h3&gt;&lt;p&gt;将文件添加到暂存区&lt;/p&gt;
@@ -190,6 +194,126 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;git-reflog&#34;&gt;git reflog
 &lt;/h3&gt;&lt;p&gt;查看操作的历史记录，可借助操作的历史记录和 &lt;code&gt;git reset --hard&lt;/code&gt; 回溯到之前某一个误操作的命令之前&lt;/p&gt;
+&lt;h2 id=&#34;查看差异&#34;&gt;查看差异
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;git diff&lt;/code&gt; 用于查看工作区、暂存区、本地仓库之间的差异，也可用于查看文件在两个特定版本或分支之间的差异&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;不加参数&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;默认比较工作区和暂存区之间的差异，显示发生更改的文件以及更改的详细信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff.png&#34;
+	width=&#34;2514&#34;
+	height=&#34;420&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_hu9336437624422792156.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_hu12040246128594081449.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;598&#34;
+		data-flex-basis=&#34;1436px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HEAD 参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;比较工作区和版本库之间的内容&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_HEAD.png&#34;
+	width=&#34;1578&#34;
+	height=&#34;424&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_HEAD_hu7290185542847590748.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_HEAD_hu2965077661842694190.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;372&#34;
+		data-flex-basis=&#34;893px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ndash;cached 参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;比较暂存区和版本库之间的内容&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;结果同上图&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;git diff &amp;lt;版本提交 ID1&amp;gt; &amp;lt;版本提交 ID2&amp;gt; [指定文件名称]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;比较（可指定）文件两次不同版本之间的差异&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_%E7%89%88%E6%9C%ACID1_%E7%89%88%E6%9C%ACID2.png&#34;
+	width=&#34;1474&#34;
+	height=&#34;332&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_%E7%89%88%E6%9C%ACID1_%E7%89%88%E6%9C%ACID2_hu8648598315040167430.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_%E7%89%88%E6%9C%ACID1_%E7%89%88%E6%9C%ACID2_hu16468195376548306577.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;443&#34;
+		data-flex-basis=&#34;1065px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;补充：HEAD 可用于表示当前分支的最新提交，HEAD~ 或 HEAD^ 可用于表示上一次提交，加数字可表示多个之前的版本（eg: HEAD~2 表示当前版本的前两个版本）&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;删除文件&#34;&gt;删除文件
+&lt;/h2&gt;&lt;p&gt;两种方式：&lt;/p&gt;
+&lt;h3 id=&#34;借助-git-更新版本达到删除文件的目的&#34;&gt;借助 git 更新版本达到删除文件的目的
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;从工作区删除文件（即删除本地文件）&lt;/li&gt;
+&lt;li&gt;从暂存区删除文件（使用 &lt;code&gt;git add .&lt;/code&gt; 更新工作区文件到暂存区）&lt;/li&gt;
+&lt;li&gt;从本地仓库删除文件（使用 &lt;code&gt;git commit&lt;/code&gt; 更新暂存区到本地仓库中）&lt;/li&gt;
+&lt;li&gt;从而达到删除文件的目的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;使用-git-rm-命令&#34;&gt;使用 git rm 命令
+&lt;/h3&gt;&lt;p&gt;该命令会同时删除工作区和暂存区中的文件，&lt;strong&gt;但本地仓库中任然存在该文件，需重新提交从而从本地仓库中删除文件。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git rm &amp;lt;file&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;把文件从工作区和暂存区同时删除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;把文件从暂存区中删除，但保留在当前工作区中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git rm -r *&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;递归删除某个目录下的所有子目录和文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;忽略文件&#34;&gt;忽略文件
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;.gitignore&lt;/strong&gt; 文件可使该文件夹下的某些文件（为被添加到版本库中的文件）被忽略，不被加入到版本库中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;应该忽略的文件&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;系统或者软件自动生成的文件&lt;/li&gt;
+&lt;li&gt;编译产生的中间文件和结果文件&lt;/li&gt;
+&lt;li&gt;运行时生成日志文件、缓存文件、临时文件&lt;/li&gt;
+&lt;li&gt;涉及身份、密码、口令、密钥等敏感信息文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;文件的匹配规则&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从上到下逐行匹配，一行表示一个忽略模式&lt;/li&gt;
+&lt;li&gt;空行或 # 开头的行会被忽略&lt;/li&gt;
+&lt;li&gt;使用标准的 glob 模式匹配&lt;/li&gt;
+&lt;li&gt;** 表示匹配任意的中间目录&lt;/li&gt;
+&lt;li&gt;! 表示取反，即指定文件一定不会被忽略&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

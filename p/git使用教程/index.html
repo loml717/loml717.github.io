@@ -283,6 +283,14 @@
         <li><a href="#git-reflog">git reflog</a></li>
       </ol>
     </li>
+    <li><a href="#查看差异">查看差异</a></li>
+    <li><a href="#删除文件">删除文件</a>
+      <ol>
+        <li><a href="#借助-git-更新版本达到删除文件的目的">借助 git 更新版本达到删除文件的目的</a></li>
+        <li><a href="#使用-git-rm-命令">使用 git rm 命令</a></li>
+      </ol>
+    </li>
+    <li><a href="#忽略文件">忽略文件</a></li>
   </ol>
 </nav>
         </div>
@@ -444,6 +452,10 @@
 		data-flex-basis="824px"
 	
 ></p>
+<p>参数：</p>
+<ul>
+<li>-s：表示简略模式显示仓库状态，</li>
+</ul>
 <p><strong>Untracked files：文件为跟踪，表示文件处于工作区</strong></p>
 <h3 id="git-add">git add
 </h3><p>将文件添加到暂存区</p>
@@ -525,6 +537,126 @@
 ></p>
 <h3 id="git-reflog">git reflog
 </h3><p>查看操作的历史记录，可借助操作的历史记录和 <code>git reset --hard</code> 回溯到之前某一个误操作的命令之前</p>
+<h2 id="查看差异">查看差异
+</h2><p><code>git diff</code> 用于查看工作区、暂存区、本地仓库之间的差异，也可用于查看文件在两个特定版本或分支之间的差异</p>
+<ul>
+<li>
+<p>不加参数</p>
+<ul>
+<li>
+<p>默认比较工作区和暂存区之间的差异，显示发生更改的文件以及更改的详细信息</p>
+<p><img src="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff.png"
+	width="2514"
+	height="420"
+	srcset="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_hu9336437624422792156.png 480w, /p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_hu12040246128594081449.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="598"
+		data-flex-basis="1436px"
+	
+></p>
+</li>
+</ul>
+</li>
+<li>
+<p>HEAD 参数：</p>
+<ul>
+<li>
+<p>比较工作区和版本库之间的内容</p>
+<p><img src="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_HEAD.png"
+	width="1578"
+	height="424"
+	srcset="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_HEAD_hu7290185542847590748.png 480w, /p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_HEAD_hu2965077661842694190.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="372"
+		data-flex-basis="893px"
+	
+></p>
+</li>
+</ul>
+</li>
+<li>
+<p>&ndash;cached 参数：</p>
+<ul>
+<li>
+<p>比较暂存区和版本库之间的内容</p>
+<p><strong>结果同上图</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p>git diff &lt;版本提交 ID1&gt; &lt;版本提交 ID2&gt; [指定文件名称]</p>
+<ul>
+<li>
+<p>比较（可指定）文件两次不同版本之间的差异</p>
+<p><img src="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_%E7%89%88%E6%9C%ACID1_%E7%89%88%E6%9C%ACID2.png"
+	width="1474"
+	height="332"
+	srcset="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_%E7%89%88%E6%9C%ACID1_%E7%89%88%E6%9C%ACID2_hu8648598315040167430.png 480w, /p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_diff_%E7%89%88%E6%9C%ACID1_%E7%89%88%E6%9C%ACID2_hu16468195376548306577.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="443"
+		data-flex-basis="1065px"
+	
+></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>补充：HEAD 可用于表示当前分支的最新提交，HEAD~ 或 HEAD^ 可用于表示上一次提交，加数字可表示多个之前的版本（eg: HEAD~2 表示当前版本的前两个版本）</strong></p>
+<h2 id="删除文件">删除文件
+</h2><p>两种方式：</p>
+<h3 id="借助-git-更新版本达到删除文件的目的">借助 git 更新版本达到删除文件的目的
+</h3><ul>
+<li>从工作区删除文件（即删除本地文件）</li>
+<li>从暂存区删除文件（使用 <code>git add .</code> 更新工作区文件到暂存区）</li>
+<li>从本地仓库删除文件（使用 <code>git commit</code> 更新暂存区到本地仓库中）</li>
+<li>从而达到删除文件的目的</li>
+</ul>
+<h3 id="使用-git-rm-命令">使用 git rm 命令
+</h3><p>该命令会同时删除工作区和暂存区中的文件，<strong>但本地仓库中任然存在该文件，需重新提交从而从本地仓库中删除文件。</strong></p>
+<p>参数：</p>
+<ul>
+<li><code>git rm &lt;file&gt;</code>
+<ul>
+<li>把文件从工作区和暂存区同时删除</li>
+</ul>
+</li>
+<li><code>git rm --cached &lt;file&gt;</code>
+<ul>
+<li>把文件从暂存区中删除，但保留在当前工作区中</li>
+</ul>
+</li>
+<li><code>git rm -r *</code>
+<ul>
+<li>递归删除某个目录下的所有子目录和文件</li>
+</ul>
+</li>
+</ul>
+<h2 id="忽略文件">忽略文件
+</h2><p><strong>.gitignore</strong> 文件可使该文件夹下的某些文件（为被添加到版本库中的文件）被忽略，不被加入到版本库中。</p>
+<p><strong>应该忽略的文件</strong></p>
+<ul>
+<li>系统或者软件自动生成的文件</li>
+<li>编译产生的中间文件和结果文件</li>
+<li>运行时生成日志文件、缓存文件、临时文件</li>
+<li>涉及身份、密码、口令、密钥等敏感信息文件</li>
+</ul>
+<p><strong>文件的匹配规则</strong></p>
+<ul>
+<li>从上到下逐行匹配，一行表示一个忽略模式</li>
+<li>空行或 # 开头的行会被忽略</li>
+<li>使用标准的 glob 模式匹配</li>
+<li>** 表示匹配任意的中间目录</li>
+<li>! 表示取反，即指定文件一定不会被忽略</li>
+</ul>
 
 </section>
 
