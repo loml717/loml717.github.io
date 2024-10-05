@@ -13,7 +13,7 @@
         <pubDate>Sun, 29 Sep 2024 17:15:03 +0800</pubDate>
         
         <guid>https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
-        <description>&lt;h1 id=&#34;git使用教程&#34;&gt;Git使用教程
+        <description>&lt;img src="https://loml717.github.io/git.png" alt="Featured image of post Git使用教程" /&gt;&lt;h1 id=&#34;git使用教程&#34;&gt;Git使用教程
 &lt;/h1&gt;&lt;h2 id=&#34;初始化配值&#34;&gt;初始化配值
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;安装
@@ -133,6 +133,7 @@
 &lt;h3 id=&#34;git-commit&#34;&gt;git commit
 &lt;/h3&gt;&lt;p&gt;提交文件到仓库中（将暂存区中的文件提交到仓库中）&lt;/p&gt;
 &lt;p&gt;-m 参数：该参数用于描述提交的信息。建议每次提交都带上，否则会强制进入文本输入（eg：vim）要求你输入信息&lt;/p&gt;
+&lt;p&gt;**小技巧：**使用 &lt;code&gt;git -a -m &amp;quot;&amp;quot;&lt;/code&gt; 可以同时完成提交和暂存两个动作&lt;/p&gt;
 &lt;h3 id=&#34;git-log&#34;&gt;git log
 &lt;/h3&gt;&lt;p&gt;用于查看提交记录&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95.png&#34;
@@ -313,6 +314,138 @@
 &lt;li&gt;使用标准的 glob 模式匹配&lt;/li&gt;
 &lt;li&gt;** 表示匹配任意的中间目录&lt;/li&gt;
 &lt;li&gt;! 表示取反，即指定文件一定不会被忽略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;远程仓库&#34;&gt;远程仓库
+&lt;/h2&gt;&lt;p&gt;远程仓库和本地仓库是相互独立的两个仓库，&lt;strong&gt;克隆仓库&lt;/strong&gt;即指把远程仓库的所有内容复制到本地。&lt;/p&gt;
+&lt;h3 id=&#34;远程仓库地址的两种方式&#34;&gt;&lt;strong&gt;远程仓库地址的两种方式：&lt;/strong&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;HTTPS
+&lt;ul&gt;
+&lt;li&gt;每次 push 需验证用户名和密码（不推荐）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSH
+&lt;ul&gt;
+&lt;li&gt;push 时不需要用户名和密码，但需要在 github 上添加 SSH 公钥配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;配置-ssh-密钥&#34;&gt;配置 SSH 密钥
+&lt;/h4&gt;&lt;p&gt;使用 ssh 方式连接远程仓库，必须配置 ssh 密钥&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;！！！建议配置时，上网查阅，此处记录较为简陋&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用该命令&lt;code&gt;ssh-keygen -t rsa -b 4096&lt;/code&gt; 用于生成密钥&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/ssh-keygen.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;执行后，会生成密钥文件（id_rsa）和公钥文件(id_rsa.pub)，将公钥填入账户配置中即可。(如果指定文件名称，则会生成对应的文件及文件.pub，同时还需再进一步配置)&lt;/p&gt;
+&lt;h3 id=&#34;克隆仓库&#34;&gt;克隆仓库
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;克隆仓库 &lt;code&gt;git clone repo-address&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;推送更新内容 &lt;code&gt;git push &amp;lt;remote&amp;gt; &amp;lt;branch&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;拉取更新内容 &lt;code&gt;git pull &amp;lt;remote&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;关联本地仓库和远程仓库&#34;&gt;关联本地仓库和远程仓库
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;建立本地仓库和远程仓库的关联：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;建立连接：&lt;code&gt;git remote add &amp;lt;shortname&amp;gt; &amp;lt;url&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;将本地仓库与远程仓库连接起来，其中 shortname 设置远程仓库的别名，url 为远程仓库的地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;查看仓库信息：&lt;code&gt;git remote -v&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;查看当前仓库所对应的远程仓库的别名和地址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;指定本地分支名称：&lt;code&gt;git branch -M main&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;建立关联分支：&lt;code&gt;git push -u origin main:main&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;将本地仓库的 main 分支和远程仓库的 main 分支关联起来，若本地与远程分支名相同，建立连接时可省略冒号后面部分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;同步远程仓库与本地仓库的内容&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git pull &amp;lt;远程仓库别名&amp;gt; &amp;lt;远程分支名&amp;gt;:&amp;lt;本地分支名&amp;gt;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;将远程仓库文件拉取到本地再合并（可能会因内容冲突而失败）&lt;/li&gt;
+&lt;li&gt;省略参数默认为 &lt;code&gt;git pull origin main&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git fetch&lt;/code&gt; 与该命令相同，都可以从远程仓库获取修改的内容，但&lt;strong&gt;不会自动合并&lt;/strong&gt;，需手动合并&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;分支&#34;&gt;分支
+&lt;/h2&gt;&lt;h3 id=&#34;分支的基本操作&#34;&gt;分支的基本操作
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;查看当前所有分支：&lt;code&gt;git branch&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建新分支：&lt;code&gt;git branch &amp;lt;分支名&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切换不同分支：&lt;code&gt;git checkout &amp;lt;分支名&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git checkout&lt;/code&gt; 也可用于恢复文件，若出现文件名与分支名相同的情况，则默认为切换分支&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git switch &amp;lt;分支名&amp;gt;&lt;/code&gt; 专门用于切换分支名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;合并分支：&lt;code&gt;git merge &amp;lt;分支名&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将指定分支合并到当前分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查看分支图：&lt;code&gt;git log --graph --oneline --decorate --all&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除分支：&lt;code&gt;git branch -d&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-d：只能删除已经被合并的分支&lt;/li&gt;
+&lt;li&gt;-D：强制删除分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;解决合并冲突&#34;&gt;解决合并冲突
+&lt;/h3&gt;&lt;p&gt;当两个分支中出现同一份文件的同一行代码出现差异时，就会发生合并冲突&lt;/p&gt;
+&lt;p&gt;当发生合并冲突时，需到文件对应位置进行修改再提交&lt;/p&gt;
+&lt;p&gt;中断合并：&lt;code&gt;git merge --abort&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;回退和rebase&#34;&gt;回退和rebase
+&lt;/h3&gt;&lt;h4 id=&#34;回退分支&#34;&gt;回退分支
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;回退到某一分支：&lt;code&gt;git checkout -b &amp;lt;分支名&amp;gt; &amp;lt;对应分支ID&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;rebase变基&#34;&gt;rebase变基
+&lt;/h4&gt;&lt;p&gt;&lt;code&gt;git rebase &amp;lt;分支名&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;rebase执行的操作：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/rebase.PNG&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;merge和rebase&#34;&gt;Merge和Rebase
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;merge
+&lt;ul&gt;
+&lt;li&gt;优：不会破坏原分支的提交历史，方便回溯和查看&lt;/li&gt;
+&lt;li&gt;缺：产生额外提交节点，分支图比较复杂&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;rebase
+&lt;ul&gt;
+&lt;li&gt;优：不新增额外的提交记录，形成线性历史，直观干净&lt;/li&gt;
+&lt;li&gt;缺：改变提交历史，改变当前分支 branch out 的节点，避免在共享分支使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
