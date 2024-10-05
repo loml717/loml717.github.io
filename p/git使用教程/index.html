@@ -10,10 +10,10 @@
 <meta property='og:description' content="Git使用教程 初始化配值 安装 官网上点击下载即可，除安装位置外，只需点击下一步。。。 初始化配置 配置用户名和邮箱 git config --global user.name &quot;loml717&quot; git config --global user.email loml717@learn.com，用于标识提交内容的身份是谁 省略（Local）：本地配置，只对本地仓库有效 &ndash;global：全局配置，所有仓库生效 &ndash;system：系统配置，对本电脑所有用户生效 保存用户名和密码 git config --global credential.helper store 查看 Git 配置信息 git config --global --list 新建版本库 创建仓库的两种方式：\n">
 <meta property='og:url' content='https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/'>
 <meta property='og:site_name' content='loml717'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-29T17:15:03&#43;08:00'/><meta property='article:modified_time' content='2024-09-29T17:15:03&#43;08:00'/><meta property='og:image' content='https://loml717.github.io/git.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-29T17:15:03&#43;08:00'/><meta property='article:modified_time' content='2024-09-29T17:15:03&#43;08:00'/><meta property='og:image' content='https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git.png' />
 <meta name="twitter:title" content="Git使用教程">
 <meta name="twitter:description" content="Git使用教程 初始化配值 安装 官网上点击下载即可，除安装位置外，只需点击下一步。。。 初始化配置 配置用户名和邮箱 git config --global user.name &quot;loml717&quot; git config --global user.email loml717@learn.com，用于标识提交内容的身份是谁 省略（Local）：本地配置，只对本地仓库有效 &ndash;global：全局配置，所有仓库生效 &ndash;system：系统配置，对本电脑所有用户生效 保存用户名和密码 git config --global credential.helper store 查看 Git 配置信息 git config --global --list 新建版本库 创建仓库的两种方式：\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://loml717.github.io/git.png' />
+    <meta name="twitter:image" content='https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 <style>
      
@@ -331,8 +331,12 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
-                
-                    <img src="/git.png" loading="lazy" alt="Featured image of post Git使用教程" />
+                <img src="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_hu16106616628617797269.png"
+                        srcset="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_hu16106616628617797269.png 800w, /p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git_hu4692529166593150892.png 1600w"
+                        width="800" 
+                        height="334" 
+                        loading="lazy"
+                        alt="Featured image of post Git使用教程" />
                 
             </a>
         </div>
@@ -710,12 +714,16 @@
 </h4><p>使用 ssh 方式连接远程仓库，必须配置 ssh 密钥</p>
 <p><strong>！！！建议配置时，上网查阅，此处记录较为简陋</strong></p>
 <p>使用该命令<code>ssh-keygen -t rsa -b 4096</code> 用于生成密钥</p>
-<p><img src="/ssh-keygen.png"
-	
-	
-	
+<p><img src="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ssh-keygen.png"
+	width="1804"
+	height="720"
+	srcset="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ssh-keygen_hu10060007959036786188.png 480w, /p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ssh-keygen_hu732416696815963097.png 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="250"
+		data-flex-basis="601px"
 	
 ></p>
 <p>执行后，会生成密钥文件（id_rsa）和公钥文件(id_rsa.pub)，将公钥填入账户配置中即可。(如果指定文件名称，则会生成对应的文件及文件.pub，同时还需再进一步配置)</p>
@@ -800,12 +808,16 @@
 <h4 id="rebase变基">rebase变基
 </h4><p><code>git rebase &lt;分支名&gt;</code></p>
 <p>rebase执行的操作：</p>
-<p><img src="/rebase.png"
-	
-	
-	
+<p><img src="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/rebase.PNG"
+	width="2139"
+	height="1215"
+	srcset="/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/rebase_hu74654466940332002.PNG 480w, /p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/rebase_hu3169999775974732021.PNG 1024w"
 	loading="lazy"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="176"
+		data-flex-basis="422px"
 	
 ></p>
 <h3 id="merge和rebase">Merge和Rebase

@@ -13,7 +13,7 @@
         <pubDate>Sun, 29 Sep 2024 17:15:03 +0800</pubDate>
         
         <guid>https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
-        <description>&lt;img src="https://loml717.github.io/git.png" alt="Featured image of post Git使用教程" /&gt;&lt;h1 id=&#34;git使用教程&#34;&gt;Git使用教程
+        <description>&lt;img src="https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/git.png" alt="Featured image of post Git使用教程" /&gt;&lt;h1 id=&#34;git使用教程&#34;&gt;Git使用教程
 &lt;/h1&gt;&lt;h2 id=&#34;初始化配值&#34;&gt;初始化配值
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;安装
@@ -334,12 +334,16 @@
 &lt;/h4&gt;&lt;p&gt;使用 ssh 方式连接远程仓库，必须配置 ssh 密钥&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;！！！建议配置时，上网查阅，此处记录较为简陋&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;使用该命令&lt;code&gt;ssh-keygen -t rsa -b 4096&lt;/code&gt; 用于生成密钥&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/ssh-keygen.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ssh-keygen.png&#34;
+	width=&#34;1804&#34;
+	height=&#34;720&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ssh-keygen_hu10060007959036786188.png 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/ssh-keygen_hu732416696815963097.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;250&#34;
+		data-flex-basis=&#34;601px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;执行后，会生成密钥文件（id_rsa）和公钥文件(id_rsa.pub)，将公钥填入账户配置中即可。(如果指定文件名称，则会生成对应的文件及文件.pub，同时还需再进一步配置)&lt;/p&gt;
@@ -424,12 +428,16 @@
 &lt;h4 id=&#34;rebase变基&#34;&gt;rebase变基
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;git rebase &amp;lt;分支名&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;rebase执行的操作：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/rebase.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/rebase.PNG&#34;
+	width=&#34;2139&#34;
+	height=&#34;1215&#34;
+	srcset=&#34;https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/rebase_hu74654466940332002.PNG 480w, https://loml717.github.io/p/git%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/rebase_hu3169999775974732021.PNG 1024w&#34;
 	loading=&#34;lazy&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;merge和rebase&#34;&gt;Merge和Rebase
