@@ -424,7 +424,7 @@
 &lt;h4 id=&#34;rebase变基&#34;&gt;rebase变基
 &lt;/h4&gt;&lt;p&gt;&lt;code&gt;git rebase &amp;lt;分支名&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;rebase执行的操作：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/rebase.PNG&#34;
+&lt;p&gt;&lt;img src=&#34;https://loml717.github.io/rebase.png&#34;
 	
 	
 	
