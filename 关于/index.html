@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="博客使用说明 创建文章 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
 <title>关于</title>
 
 <link rel='canonical' href='https://loml717.github.io/%E5%85%B3%E4%BA%8E/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="关于">
-<meta property='og:description' content="">
+<meta property='og:description' content="博客使用说明 创建文章 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
 <meta property='og:url' content='https://loml717.github.io/%E5%85%B3%E4%BA%8E/'>
 <meta property='og:site_name' content='loml717'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="博客使用说明 创建文章 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 <style>
      
@@ -240,7 +240,41 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#创建文章">创建文章</a></li>
+    <li><a href="#创建分类">创建分类</a></li>
+    <li><a href="#文章中插入图片">文章中插入图片</a></li>
+    <li><a href="#将文章同步到-github-上">将文章同步到 github 上</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -270,7 +304,55 @@
     <section class="article-content">
     
     
-    
+    <h1 id="博客使用说明">博客使用说明
+</h1><h2 id="创建文章">创建文章
+</h2><p>在 <code>cmd</code> 中输入<code>hugo new content post/文章名称/index.md</code> 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。</p>
+<p><strong>注意！参数上边与下边都需要用分割线分隔开</strong></p>
+<p><img src="/%E5%85%B3%E4%BA%8E/image1.png"
+	width="1998"
+	height="850"
+	srcset="/%E5%85%B3%E4%BA%8E/image1_hu2329282943116448934.png 480w, /%E5%85%B3%E4%BA%8E/image1_hu1253308470572152549.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="235"
+		data-flex-basis="564px"
+	
+></p>
+<p>默认貌似无法生成归类等参数的设置，可以通过复制张贴几行修改为对应参数填写。。。</p>
+<h2 id="创建分类">创建分类
+</h2><p>找到路径 <code>content/categories</code> 在该文件下创建如下文件夹和文件 <code>分类名称/_index.md</code> , 在 <code>.md</code> 文件的头部输入如下类似的参数即可成功创建一个分类。</p>
+<p><strong>注意！参数必须写在 YAML Front Matter 中</strong>
+<img src="/%E5%85%B3%E4%BA%8E/image2.png"
+	width="1980"
+	height="394"
+	srcset="/%E5%85%B3%E4%BA%8E/image2_hu288522141300659307.png 480w, /%E5%85%B3%E4%BA%8E/image2_hu12123283247433304807.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="502"
+		data-flex-basis="1206px"
+	
+></p>
+<ul>
+<li><strong>参数介绍：</strong>
+<ul>
+<li>title：分类标题</li>
+<li>description：分类描述，会在归档中显示</li>
+<li>slug：在右侧边栏显示分类名称</li>
+</ul>
+</li>
+</ul>
+<h2 id="文章中插入图片">文章中插入图片
+</h2><p>在 hugo 中想要使文章中的图片在网页中显示，不能按照 markdown 原本的插入格式插入，而是应当使用如下格式</p>
+<p><code>![ImageName](imagename.png)</code></p>
+<h2 id="将文章同步到-github-上">将文章同步到 github 上
+</h2><p>直接通过 git 将包含 hugo 执行程序和该主题所有相关配置文件的文件夹重新上传至仓库中即可，github 将通过 action 自动同步静态网页文件到公开为站点的仓库中，文章就成功的上传到博客中了。</p>
+<p><strong>网站具体配置详情，请参考文档：<a class="link" href="https://stack.jimmycai.com/"  target="_blank" rel="noopener"
+    >Stack | Card-style Hugo theme designed for bloggers (jimmycai.com)</a></strong></p>
+
 </section>
 
 
