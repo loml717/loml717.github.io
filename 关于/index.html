@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="博客使用说明 创建文章 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="博客使用说明 创建文章 方式一 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
 <title>关于</title>
 
 <link rel='canonical' href='https://loml717.github.io/%E5%85%B3%E4%BA%8E/'>
 
 <link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="关于">
-<meta property='og:description' content="博客使用说明 创建文章 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
+<meta property='og:description' content="博客使用说明 创建文章 方式一 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
 <meta property='og:url' content='https://loml717.github.io/%E5%85%B3%E4%BA%8E/'>
 <meta property='og:site_name' content='loml717'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
 <meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="博客使用说明 创建文章 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
+<meta name="twitter:description" content="博客使用说明 创建文章 方式一 在 cmd 中输入hugo new content post/文章名称/index.md 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 <style>
      
@@ -262,9 +262,14 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#创建文章">创建文章</a></li>
+    <li><a href="#创建文章">创建文章</a>
+      <ol>
+        <li><a href="#方式一">方式一</a></li>
+        <li><a href="#方式二">方式二</a></li>
+      </ol>
+    </li>
     <li><a href="#创建分类">创建分类</a></li>
-    <li><a href="#文章中插入图片">文章中插入图片</a></li>
+    <li><a href="#添加友链">添加友链</a></li>
     <li><a href="#将文章同步到-github-上">将文章同步到 github 上</a></li>
   </ol>
 </nav>
@@ -306,7 +311,8 @@
     
     <h1 id="博客使用说明">博客使用说明
 </h1><h2 id="创建文章">创建文章
-</h2><p>在 <code>cmd</code> 中输入<code>hugo new content post/文章名称/index.md</code> 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。</p>
+</h2><h3 id="方式一">方式一
+</h3><p>在 <code>cmd</code> 中输入<code>hugo new content post/文章名称/index.md</code> 即可生成对应文件，文件头部会自动生成类似下方图片的参数设置，通过修改相关参数即可使该文章在主页中出现不同的效果，同时还可以给文章起到分类作用。参数设置成功后即可输入文章相关内容。</p>
 <p><strong>注意！参数上边与下边都需要用分割线分隔开</strong></p>
 <p><img src="/%E5%85%B3%E4%BA%8E/image1.png"
 	width="1998"
@@ -320,23 +326,75 @@
 		data-flex-basis="564px"
 	
 ></p>
-<p>默认貌似无法生成归类等参数的设置，可以通过复制张贴几行修改为对应参数填写。。。</p>
-<h2 id="创建分类">创建分类
-</h2><p>找到路径 <code>content/categories</code> 在该文件下创建如下文件夹和文件 <code>分类名称/_index.md</code> , 在 <code>.md</code> 文件的头部输入如下类似的参数即可成功创建一个分类。</p>
-<p><strong>注意！参数必须写在 YAML Front Matter 中</strong>
-<img src="/%E5%85%B3%E4%BA%8E/image2.png"
-	width="1980"
-	height="394"
-	srcset="/%E5%85%B3%E4%BA%8E/image2_hu288522141300659307.png 480w, /%E5%85%B3%E4%BA%8E/image2_hu12123283247433304807.png 1024w"
+<p>默认无法生成归类等参数的设置，可以通过源代码模式编写即可，如下</p>
+<p><img src="/%E5%85%B3%E4%BA%8E/%E6%BA%90%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%BC%8F%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0%E5%A4%B4%E5%8F%82%E6%95%B0.png"
+	width="1672"
+	height="416"
+	srcset="/%E5%85%B3%E4%BA%8E/%E6%BA%90%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%BC%8F%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0%E5%A4%B4%E5%8F%82%E6%95%B0_hu1554085257404494718.png 480w, /%E5%85%B3%E4%BA%8E/%E6%BA%90%E4%BB%A3%E7%A0%81%E6%A8%A1%E5%BC%8F%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0%E5%A4%B4%E5%8F%82%E6%95%B0_hu6879506742858236141.png 1024w"
 	loading="lazy"
 	
 	
 		class="gallery-image" 
-		data-flex-grow="502"
-		data-flex-basis="1206px"
+		data-flex-grow="401"
+		data-flex-basis="964px"
 	
 ></p>
-<ul>
+<h3 id="方式二">方式二
+</h3><p>在路径 <code>content/post</code> 下创建以文章名命名的文件夹，在该文件夹下创建 <code>index.md</code> 文件，在文件中添加  <code>yaml</code>  代码，按如下方式设置参数即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Chinese Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">这是一个副标题</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span><span class="ld">2020-09-09</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">slug</span><span class="p">:</span><span class="w"> </span><span class="l">test-chinese</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">helena-hertz-wWZzXlDpMog-unsplash.jpg</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">测试</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="创建分类">创建分类
+</h2><p>找到路径 <code>content/categories</code> 在该文件下创建如下文件夹和文件 <code>分类名称/_index.md</code> , 在 <code>.md</code> 文件的头部输入如下类似的参数即可成功创建一个分类。</p>
+<p><strong>注意！参数必须写在 YAML Front Matter 中</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Test&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;This is an example category&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">slug</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;test&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">style</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">background</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;#2a9d8f&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">color</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;#fff&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li><strong>参数介绍：</strong>
 <ul>
 <li>title：分类标题</li>
@@ -345,13 +403,35 @@
 </ul>
 </li>
 </ul>
-<h2 id="文章中插入图片">文章中插入图片
-</h2><p>在 hugo 中想要使文章中的图片在网页中显示，不能按照 markdown 原本的插入格式插入，而是应当使用如下格式</p>
-<p><code>![ImageName](imagename.png)</code></p>
+<h2 id="添加友链">添加友链
+</h2><p>按照如下格式，在 <code>content/page/links/index.md</code> 下的 <code>yaml</code> 代码中添加即可:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">links</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">GitHub</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">GitHub is the world&#39;s largest software development platform.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">website</span><span class="p">:</span><span class="w"> </span><span class="l">https://github.com</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">TypeScript</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l">TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">website</span><span class="p">:</span><span class="w"> </span><span class="l">https://www.typescriptlang.org</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">ts-logo-128.jpg</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>image</code> 接受本地文件和线上文件</p>
 <h2 id="将文章同步到-github-上">将文章同步到 github 上
 </h2><p>直接通过 git 将包含 hugo 执行程序和该主题所有相关配置文件的文件夹重新上传至仓库中即可，github 将通过 action 自动同步静态网页文件到公开为站点的仓库中，文章就成功的上传到博客中了。</p>
-<p><strong>网站具体配置详情，请参考文档：<a class="link" href="https://stack.jimmycai.com/"  target="_blank" rel="noopener"
-    >Stack | Card-style Hugo theme designed for bloggers (jimmycai.com)</a></strong></p>
 
 </section>
 
