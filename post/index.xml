@@ -7,7 +7,141 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>loml717</copyright>
-        <lastBuildDate>Mon, 07 Oct 2024 16:38:15 +0800</lastBuildDate><atom:link href="https://loml717.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 11 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://loml717.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>软件设计师</title>
+        <link>https://loml717.github.io/p/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/</link>
+        <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://loml717.github.io/p/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/</guid>
+        <description>&lt;h1 id=&#34;中级--软件设计师知识点&#34;&gt;中级&amp;ndash;软件设计师（知识点）
+&lt;/h1&gt;&lt;h2 id=&#34;知识产权&#34;&gt;知识产权
+&lt;/h2&gt;&lt;h3 id=&#34;著作权版权&#34;&gt;著作权（版权）
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;人身权
+&lt;ul&gt;
+&lt;li&gt;发表权（期限：终身+50年）、署名权、修改权、保护作品完整权&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;财产权&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;专利地域性&#34;&gt;专利地域性
+&lt;/h3&gt;&lt;p&gt;各国主管机关依照本国法律授予的知识产权，只能在其本国领域内受法律保护（哪里申请，哪里保护）&lt;/p&gt;
+&lt;h3 id=&#34;计算机软件著作权&#34;&gt;计算机软件著作权
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;主体与客体&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主体
+&lt;ul&gt;
+&lt;li&gt;计算机软件著作权的主体指&lt;strong&gt;享有著作权的人&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;根据规定：著作权法（《中华人民共和国著作权法》）、《计算机软件保护条例》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;客体
+&lt;ul&gt;
+&lt;li&gt;计算机软件著作权的主体指&lt;strong&gt;著作权法保护的计算机著作权的范围（受保护的对象）&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;计算机程序：源程序和目标程序&lt;/li&gt;
+&lt;li&gt;计算机软件的文档：程序设计说明书、流程图和用户手册&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;根据规定：《著作权法》第三条、《计算机软件保护条例》第二条&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;权利&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;人身权
+&lt;ul&gt;
+&lt;li&gt;发表权、开发者身份权（署名权）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;财产权&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;保护期&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;计算机软件著作权的权利自软件开发完成之日起产生，保护期为50年。保护期满，除开发者身份权外，其他权利终止。&lt;/p&gt;
+&lt;h3 id=&#34;职务作品&#34;&gt;职务作品
+&lt;/h3&gt;&lt;p&gt;职务软件作品指公民在单位任职期间为执行本单位工作任务所开发的计算机软件作品。（开发人员仅享有署名权）&lt;/p&gt;
+&lt;p&gt;若开发的软件不是执行本职工作的结果，其著作权不属单位享有。如果该雇员主要使用了单位的设备，著作权不能属于该雇员个人享有。&lt;/p&gt;
+&lt;h3 id=&#34;委托开发&#34;&gt;委托开发
+&lt;/h3&gt;&lt;p&gt;接受他人委托开发的软件，其著作权的归属由委托者与受委托者签订书面合同约定；无书面合同或者书面合同未作明确约定的，其著作权由受托人享有。&lt;/p&gt;
+&lt;h3 id=&#34;商业秘密权&#34;&gt;商业秘密权
+&lt;/h3&gt;&lt;p&gt;商业秘密：指不为公众所知悉的，能为权利人带来经济利益、具有实用性并经权利人采取保密措施的技术信息和经营信息。&lt;/p&gt;
+&lt;h3 id=&#34;专利权申请&#34;&gt;专利权申请
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;专利申请原则
+&lt;ul&gt;
+&lt;li&gt;两个或者两个以上的人分别就同样的发明创造申请专利的，&lt;strong&gt;专利权授给最先申请人&lt;/strong&gt;，同一时间则协商。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;商标权&#34;&gt;商标权
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;时间性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我国商标权的保护期限自核准注册之日起&lt;strong&gt;10年内有效&lt;/strong&gt;，但可以根据其所有人的需要&lt;strong&gt;无限地延长权利期限&lt;/strong&gt;，在期限届满前6个月内申请续展注册，每次续展注册的有效期为10年&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;商标注册&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先注册先得，同一时间，先使用先得，未使用协商。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;面向对象技术&#34;&gt;面向对象技术
+&lt;/h2&gt;&lt;h3 id=&#34;类&#34;&gt;类
+&lt;/h3&gt;&lt;p&gt;一个类所包含的方法和数据描述一组对象的共同行为和属性。&lt;/p&gt;
+&lt;p&gt;类是在对象之上的抽像，对象是类的具体化，是类的实例。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;类分为三种
+&lt;ul&gt;
+&lt;li&gt;实体类
+&lt;ul&gt;
+&lt;li&gt;其对象表示现实世界中真实的实体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;接口类（边界类）
+&lt;ul&gt;
+&lt;li&gt;其为用户提供一种与系统合作交互的方式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;控制类
+&lt;ul&gt;
+&lt;li&gt;其用来控制活动流，充当协调者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一般类与特殊类
+&lt;ul&gt;
+&lt;li&gt;一般类为特殊类的父类，特殊类为一般类的子类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;对象&#34;&gt;对象
+&lt;/h3&gt;&lt;p&gt;对象是基本的运行时的实体，它既包括数据（属性 | 状态），也包括作用与数据的操作（行为 | 方法 | 函数）。&lt;/p&gt;
+&lt;p&gt;一个对象通常由对象名、属性和方法 3 个部分组成。&lt;/p&gt;
+&lt;h3 id=&#34;消息&#34;&gt;消息
+&lt;/h3&gt;&lt;p&gt;对象之间进行通信的一种构造叫作消息。&lt;/p&gt;
+&lt;p&gt;当一个消息发送给某个对象时，包含要求接收对象去执行某些活动的信息。接收到信息的对象经过解释，然后予以响应。这种通信机制称为消息传递。&lt;/p&gt;
+&lt;h3 id=&#34;方法重载&#34;&gt;方法重载
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;方法名相同，参数个数不同&lt;/li&gt;
+&lt;li&gt;方法名相同，参数类型不同&lt;/li&gt;
+&lt;li&gt;方法名相同，参数类型顺序不同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;封装&#34;&gt;封装
+&lt;/h3&gt;&lt;p&gt;封装是一种信息隐蔽技术，它的目的是使对象的使用者和生产者分离，使对象的定义和实现分开。&lt;/p&gt;
+&lt;h3 id=&#34;继承&#34;&gt;继承
+&lt;/h3&gt;&lt;p&gt;继承是父类和子类之间共享数据和方法的机制。&lt;/p&gt;
+&lt;p&gt;一个父类可以有多个子类，这些子类都是父类的特例，父类描述类这些子类的公共属性和方法。一个子类可以继承它的父类（或祖先类）中的属性和方法，这些属性和操作在子类中不必定义，子类还可以定义自己的属性和方法。&lt;/p&gt;
+&lt;p&gt;单重继承：继承一个父类&lt;/p&gt;
+&lt;p&gt;多重继承：继承两个及以上的父类&lt;/p&gt;
+&lt;h3 id=&#34;多态&#34;&gt;多态
+&lt;/h3&gt;&lt;p&gt;不同的对象收到同一消息可以产生完全不同的结果，这一现象称为多态。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>网络协议</title>
         <link>https://loml717.github.io/p/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</link>
         <pubDate>Mon, 07 Oct 2024 16:38:15 +0800</pubDate>
