@@ -2,16 +2,16 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="中级--软件设计师，知识点干货">
-<title>软件设计师</title>
+<title></title>
 
-<link rel='canonical' href='https://loml717.github.io/p/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/'>
+<link rel='canonical' href='https://loml717.github.io/p/'>
 
-<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="软件设计师">
+<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="">
 <meta property='og:description' content="中级--软件设计师，知识点干货">
-<meta property='og:url' content='https://loml717.github.io/p/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/'>
+<meta property='og:url' content='https://loml717.github.io/p/'>
 <meta property='og:site_name' content='loml717'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-10-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-10-11T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="软件设计师">
+<meta name="twitter:title" content="">
 <meta name="twitter:description" content="中级--软件设计师，知识点干货">
     <link rel="shortcut icon" href="/favicon.ico" />
 <style>
@@ -283,6 +283,34 @@
         <li><a href="#封装">封装</a></li>
         <li><a href="#继承">继承</a></li>
         <li><a href="#多态">多态</a></li>
+        <li><a href="#静态动态绑定">静态、动态绑定</a></li>
+        <li><a href="#面向对象设计原则">面向对象设计原则</a></li>
+        <li><a href="#面向对象">面向对象</a>
+          <ol>
+            <li><a href="#分析ooa">分析（OOA）</a></li>
+            <li><a href="#设计ood">设计（OOD）</a></li>
+            <li><a href="#测试">测试</a></li>
+          </ol>
+        </li>
+        <li><a href="#补充">补充</a></li>
+      </ol>
+    </li>
+    <li><a href="#uml">UML</a>
+      <ol>
+        <li><a href="#事物">事物</a></li>
+        <li><a href="#关系">关系</a>
+          <ol>
+            <li><a href="#依赖关系">依赖关系</a></li>
+            <li><a href="#关联关系">关联关系</a></li>
+            <li><a href="#泛化关系">泛化关系</a></li>
+            <li><a href="#实现关系">实现关系</a></li>
+          </ol>
+        </li>
+        <li><a href="#图">图</a>
+          <ol>
+            <li><a href="#类图">类图</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -312,7 +340,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%B8%88/">软件设计师</a>
+            <a href="/p/"></a>
         </h2>
     
         
@@ -461,7 +489,7 @@
 </ul>
 <h3 id="对象">对象
 </h3><p>对象是基本的运行时的实体，它既包括数据（属性 | 状态），也包括作用与数据的操作（行为 | 方法 | 函数）。</p>
-<p>一个对象通常由对象名、属性和方法 3 个部分组成。</p>
+<p><strong>一个对象通常由对象名、属性和方法 3 个部分组成。</strong></p>
 <h3 id="消息">消息
 </h3><p>对象之间进行通信的一种构造叫作消息。</p>
 <p>当一个消息发送给某个对象时，包含要求接收对象去执行某些活动的信息。接收到信息的对象经过解释，然后予以响应。这种通信机制称为消息传递。</p>
@@ -479,7 +507,190 @@
 <p>单重继承：继承一个父类</p>
 <p>多重继承：继承两个及以上的父类</p>
 <h3 id="多态">多态
-</h3><p>不同的对象收到同一消息可以产生完全不同的结果，这一现象称为多态。</p>
+</h3><p>同类的不同的对象收到同一消息可以产生完全不同的结果，这一现象称为多态。</p>
+<p><code>父类 对象名 =  new 子类</code> 编译看左边，运行看右边</p>
+<p><strong>多态的不同形式</strong></p>
+<ul>
+<li>多态
+<ul>
+<li>通用的
+<ul>
+<li>参数：泛型</li>
+<li>包含：父类引用子类</li>
+</ul>
+</li>
+<li>特定的
+<ul>
+<li>过载：重载方法</li>
+<li>强制：强制类型转换</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="静态动态绑定">静态、动态绑定
+</h3><p>绑定是一个把过程调用和响应调用所需要执行的代码加以结合的过程</p>
+<ul>
+<li>静态绑定：在编译时进行</li>
+<li>动态绑定：在运行时进行</li>
+</ul>
+<h3 id="面向对象设计原则">面向对象设计原则
+</h3><ul>
+<li>单一责任原则</li>
+<li>就一个类而言，应该仅有一个引起它变化的原因</li>
+<li>开放-封闭原则
+<ul>
+<li>对扩展开放，对修改封闭</li>
+</ul>
+</li>
+<li>里氏替换原则
+<ul>
+<li>基类出现的地方，子类必定能出现</li>
+</ul>
+</li>
+<li>依赖倒置原则
+<ul>
+<li>依赖于抽象，而不依赖于细节（实现）</li>
+</ul>
+</li>
+<li>接口分离原则
+<ul>
+<li>依赖于抽象，而不依赖与具体</li>
+</ul>
+</li>
+<li>共同重用原则
+<ul>
+<li>重用包中的一个类，就要重用包中的所有类</li>
+</ul>
+</li>
+<li>共同封闭原则
+<ul>
+<li>一个变化若对一个包产生影响，则将对该包中的所有类产生影响，而对于其他的包不造成影响</li>
+</ul>
+</li>
+</ul>
+<h3 id="面向对象">面向对象
+</h3><h4 id="分析ooa">分析（OOA）
+</h4><p>面向对象分析的目的是为了获得对应用问题的理解。理解的目的是确定系统的功能、性能的要求。</p>
+<p><strong>5 个活动</strong></p>
+<ul>
+<li>认定对象
+<ul>
+<li>定义问题域，将自然存在的 ‘名词’ 作为一个对象</li>
+</ul>
+</li>
+<li>组织对象</li>
+<li>对象间的相互作用</li>
+<li>基于对象的操作</li>
+<li>定义对象的内部信息</li>
+</ul>
+<h4 id="设计ood">设计（OOD）
+</h4><p>面向对象设计是将 OOA 所创建的分析模型转化为设计模型，其目标是定义系统构造蓝图。</p>
+<p>OOD 在复用 OOA 模型的基础上，包含与 OOA 对应如下五个活动：</p>
+<ul>
+<li>识别类及对象</li>
+<li>定义属性</li>
+<li>定义服务</li>
+<li>识别关系</li>
+<li>识别包</li>
+</ul>
+<h4 id="测试">测试
+</h4><p><strong>4 个层次</strong></p>
+<ul>
+<li>算法层</li>
+<li>类层</li>
+<li>模板层</li>
+<li>系统层</li>
+</ul>
+<h3 id="补充">补充
+</h3><ul>
+<li>类的静态方法只能访问该类的静态数据成员</li>
+<li>静态数据成员可以被该类的所有方法访问</li>
+<li>该类的对象共享其静态数据成员的值</li>
+<li>在面向对象技术中，对象具有清晰的边界、良好定义的行为、可扩展性的特性</li>
+</ul>
+<h2 id="uml">UML
+</h2><p>UML 统一建模语言，由 3 个要素构成，UML 的基本构造块、支配这些构造块如何放置在一起的规则、运用与整个语言的一些公共机制。</p>
+<p>UML 的词汇表包含 3 种构造块：</p>
+<ul>
+<li>事物
+<ul>
+<li>对模型中最具有代表性的成分的抽象</li>
+</ul>
+</li>
+<li>关系
+<ul>
+<li>把事物结合在一起</li>
+</ul>
+</li>
+<li>图
+<ul>
+<li>聚集了相关的事物</li>
+</ul>
+</li>
+</ul>
+<h3 id="事物">事物
+</h3><p><strong>4 种事物：</strong></p>
+<ul>
+<li>结构事物（静态部分）
+<ul>
+<li>类、接口、协作、用例、主动类、构件、制品、结点</li>
+</ul>
+</li>
+<li>行为事物（动态部分）
+<ul>
+<li>交互、状态机、活动</li>
+</ul>
+</li>
+<li>分组事物（组织部分）
+<ul>
+<li>包</li>
+</ul>
+</li>
+<li>注释事物（解释部分）
+<ul>
+<li>注解</li>
+</ul>
+</li>
+</ul>
+<h3 id="关系">关系
+</h3><p>4 种关系：依赖、关联、泛化、实现</p>
+<h4 id="依赖关系">依赖关系
+</h4><p>依赖是两个事物之间的语义关系，其中一个事物（独立事物）发生变化会影响另一个事物（依赖事物）的语义。</p>
+<p>图形： A &mdash;&mdash;&gt; B （A 依赖于 B）</p>
+<h4 id="关联关系">关联关系
+</h4><p>关联是一种结构关系，它描述了一组链，链是对象之间的连接。聚集是一种特殊类型的关联，它描述了整体和部分间的结构关系。</p>
+<p>在关联上可以<strong>标注重复度（多重度）和角色</strong>。</p>
+<p><strong>聚集：部分和整体的生命周期不一致，整体消失了，部分仍然存在，部分可以脱离整体存在。</strong></p>
+<p><strong>组合：部分和整体的生命周期一致，整体消失了，部分也消失了，部分不可以脱离整体存在。</strong></p>
+<h5 id="关联多重度">关联多重度
+</h5><p>多重度是指一个类的实例能够与另一个类的多少个实例相关联</p>
+<h4 id="泛化关系">泛化关系
+</h4><p>泛化是一种特殊/一般关系，特殊元素（子类）的对象可替代一般元素（父类）的对象。</p>
+<h4 id="实现关系">实现关系
+</h4><p>实现是类元之间的语义关系，其中一个类元指定了由另一个类元保证执行的契约。</p>
+<h3 id="图">图
+</h3><p>13 种图：类图、对象图、用例图、序列图、通信图、状态图、活动图、构件图、组合结构图、部署图、包图、交互概览图、计时图</p>
+<h4 id="类图">类图
+</h4><p>类图展现了一组对象、接口、协作和它们之间的关系。</p>
+<p><img src="/p/%E7%B1%BB%E5%9B%BE.png"
+	width="1786"
+	height="1146"
+	srcset="/p/%E7%B1%BB%E5%9B%BE_hu4822158137995316349.png 480w, /p/%E7%B1%BB%E5%9B%BE_hu7061517334284926786.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="155"
+		data-flex-basis="374px"
+	
+></p>
+<p>3 种方式使用类图</p>
+<ul>
+<li>对系统的词汇建模</li>
+<li>对简单的协作建模</li>
+<li>对逻辑数据库模式建模</li>
+</ul>
 
 </section>
 
