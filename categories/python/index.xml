@@ -13,7 +13,29 @@
         <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
         
         <guid>https://loml717.github.io/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/</guid>
-        <description>&lt;img src="https://loml717.github.io/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/python_virtual_enviroment.png" alt="Featured image of post Python虚拟环境管理" /&gt;</description>
+        <description>&lt;img src="https://loml717.github.io/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/python_virtual_enviroment.png" alt="Featured image of post Python虚拟环境管理" /&gt;&lt;h1 id=&#34;python虚拟环境管理&#34;&gt;Python虚拟环境管理
+&lt;/h1&gt;&lt;h2 id=&#34;什么是虚拟环境&#34;&gt;什么是虚拟环境
+&lt;/h2&gt;&lt;img src=&#34;环境与虚拟环境.png&#34; style=&#34;zoom: 50%;&#34; /&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;python环境&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lib 用于放置 python 可调用的库，其中包含标准库和 site-pakages。site-pakages 用于存放下载的第三方库。&lt;/li&gt;
+&lt;li&gt;Scripts 用于存放可执行文件&lt;/li&gt;
+&lt;li&gt;python.exe 即为 python 解释器，用于运行 py 文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;虚拟环境&lt;/p&gt;
+&lt;p&gt;虚拟环境实际上就是 python 文件夹的复制品，但与原环境有 3 点不同&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标准库不再被复制，直接调用原环境的标准库。site-pakages 文件夹里为空。&lt;/li&gt;
+&lt;li&gt;虚拟环境应该有自己的名称&lt;/li&gt;
+&lt;li&gt;python.exe 被移到到 Scripts 中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
         </item>
         
     </channel>
