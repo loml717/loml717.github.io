@@ -240,6 +240,7 @@
 &lt;li&gt;该类的对象共享其静态数据成员的值&lt;/li&gt;
 &lt;li&gt;在面向对象技术中，对象具有清晰的边界、良好定义的行为、可扩展性的特性&lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML
 &lt;/h2&gt;&lt;p&gt;UML 统一建模语言，由 3 个要素构成，UML 的基本构造块、支配这些构造块如何放置在一起的规则、运用与整个语言的一些公共机制。&lt;/p&gt;
 &lt;p&gt;UML 的词汇表包含 3 种构造块：&lt;/p&gt;
@@ -488,7 +489,298 @@
 &lt;h4 id=&#34;部署图&#34;&gt;部署图
 &lt;/h4&gt;&lt;p&gt;部署图是用来对面向对象系统的物理方面建模的方法，&lt;strong&gt;展现了系统的软件和硬件之间的关系&lt;/strong&gt;，在实施阶段使用。&lt;/p&gt;
 &lt;img src=&#34;部署图.png&#34; style=&#34;zoom: 67%;&#34; /&gt;
-</description>
+&lt;hr&gt;
+&lt;h2 id=&#34;软件工程&#34;&gt;软件工程
+&lt;/h2&gt;&lt;h3 id=&#34;软件过程&#34;&gt;软件过程
+&lt;/h3&gt;&lt;h4 id=&#34;能力成熟度模型cmm&#34;&gt;能力成熟度模型（CMM）
+&lt;/h4&gt;&lt;p&gt;CMM 将软件过程改进分为以下 5 个成熟度级别：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;初始级
+&lt;ul&gt;
+&lt;li&gt;软件过程的特定是&lt;strong&gt;杂乱无章，有时甚至混乱&lt;/strong&gt;，几乎没有明确定义的步骤，项目的成功完全依赖个人努力和英雄式核心人物的作用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可重复级
+&lt;ul&gt;
+&lt;li&gt;建立了&lt;strong&gt;基本的项目管理过程和实践来跟踪项目费用、进度和功能特性&lt;/strong&gt;，有必要的过程准则来重复以前在同类项目中的成功&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;已定义级
+&lt;ul&gt;
+&lt;li&gt;软件过程文档化、标准化，并综合成整个软件开发组织的标准软件过程。&lt;strong&gt;所有项目都采用根据实际情况修改后得到的标准软件过程来开发和维护软件&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;已管理级
+&lt;ul&gt;
+&lt;li&gt;制定了软件过程和产品质量的详细度量标准。&lt;strong&gt;软件过程的产品质量都被开发组织的成员所理解和控制&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;优化级
+&lt;ul&gt;
+&lt;li&gt;加强了定量分析，通过来自&lt;strong&gt;过程质量反馈&lt;/strong&gt;和来自&lt;strong&gt;新观念、新技术的反馈&lt;/strong&gt;使过程能&lt;strong&gt;不断持续地改进&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;能力成熟度模型集成cmmi&#34;&gt;能力成熟度模型集成（CMMI）
+&lt;/h4&gt;&lt;p&gt;CMMI提供了两种表示方法：阶段式模型和连续式模型&lt;/p&gt;
+&lt;p&gt;1）阶段式模型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;初始的：过程不可预测且缺乏控制&lt;/li&gt;
+&lt;li&gt;已管理的：过程为项目服务&lt;/li&gt;
+&lt;li&gt;已定义的：过程为组织服务&lt;/li&gt;
+&lt;li&gt;定量管理的：过程已度量和控制&lt;/li&gt;
+&lt;li&gt;优化的：集中于过程改进&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2）连续式模型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CL0（未完成的）
+&lt;ul&gt;
+&lt;li&gt;过程域&lt;strong&gt;未执行或未得到&lt;/strong&gt; CL1 中定义的所有目标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CL1（已执行的）
+&lt;ul&gt;
+&lt;li&gt;其共性目标是过程&lt;strong&gt;将可标识的输入工作产品转换成可标识的输出工作产品&lt;/strong&gt;，以实现支持过程域的特定目标。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CL2（已管理的）
+&lt;ul&gt;
+&lt;li&gt;其共性目标&lt;strong&gt;集中于已管理的过程的制度化&lt;/strong&gt;。根据组织级政策规定过程的运行将使用哪个过程，项目遵循已文档化的计划和过程描述，所有正在工作的人都有权使用足够的资源，所有工作任务和工作产品都被监控、控制和评审。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CL3（已定义级的）
+&lt;ul&gt;
+&lt;li&gt;其共性目标&lt;strong&gt;集中于已定义的过程的制度化&lt;/strong&gt;。过程是按照组织的剪裁指南从组织的标准过程集中剪裁得到的，还必须收集过程资产和过程的度量，并用于将来对过程的改进。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CL4（定量管理的）
+&lt;ul&gt;
+&lt;li&gt;其共性目标&lt;strong&gt;集中于可定量管理的过程的制度化&lt;/strong&gt;。使用测量和质量保证来控制和改进过程域，建立和使用关于质量和过程执行的定量目标作为管理准则。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CL5（优化的）
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;使用量化（统计学）手段改变和优化过程域&lt;/strong&gt;，以满足客户要求的改变和持续改进计划中的过程域的功效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;软件过程模型&#34;&gt;软件过程模型
+&lt;/h3&gt;&lt;p&gt;软件过程模型也称为软件开发模型，它是软件开发全部过程、活动和任务的结构框架。&lt;/p&gt;
+&lt;h4 id=&#34;瀑布模型&#34;&gt;瀑布模型
+&lt;/h4&gt;&lt;p&gt;只适用于需求明确或者二次开发（需求稳定）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优点
+&lt;ul&gt;
+&lt;li&gt;容易理解，管理成本低&lt;/li&gt;
+&lt;li&gt;强调开发的阶段性早期计划及需求调查和产品测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺点
+&lt;ul&gt;
+&lt;li&gt;客户必须能够完整、正确、清晰的表达他们的需要&lt;/li&gt;
+&lt;li&gt;难以评估进度状态&lt;/li&gt;
+&lt;li&gt;接近项目结束时，出现大量的集成和测试工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;瀑布模型.png&#34; style=&#34;zoom:50%;&#34; /&gt;
+&lt;h4 id=&#34;v模型&#34;&gt;V模型
+&lt;/h4&gt;&lt;p&gt;特点是增加了多轮测试。&lt;/p&gt;
+&lt;img src=&#34;V模型.png&#34; style=&#34;zoom: 40%;&#34; /&gt;
+&lt;h4 id=&#34;增量模型&#34;&gt;增量模型
+&lt;/h4&gt;&lt;p&gt;优先级最高的服务最先交付，但由于并不是从系统整体角度规划各个模块，因此不利于模块划分。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优点
+&lt;ul&gt;
+&lt;li&gt;瀑布模型的优点&lt;/li&gt;
+&lt;li&gt;第一个可交付版本所需成本和时间很少&lt;/li&gt;
+&lt;li&gt;开发承担的风险不大&lt;/li&gt;
+&lt;li&gt;可减少用户需求的变更&lt;/li&gt;
+&lt;li&gt;运行增量投资&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺点
+&lt;ul&gt;
+&lt;li&gt;初始增量可能会造成后来增量的不稳定&lt;/li&gt;
+&lt;li&gt;需求不稳定，可能导致一些增量需重新开发&lt;/li&gt;
+&lt;li&gt;管理发生的成本、进度和配置的复杂性可能会超出组织的能力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;增量模型.png&#34; style=&#34;zoom:47%;&#34; /&gt;
+&lt;h4 id=&#34;演化模型&#34;&gt;演化模型
+&lt;/h4&gt;&lt;p&gt;演化模型是迭代的过程模型，使得软件开发人员能够逐步开发出更完整的软件版本。演化模型特别适用于对软件需求缺乏准确认识的情况。&lt;/p&gt;
+&lt;h5 id=&#34;原型模型&#34;&gt;原型模型
+&lt;/h5&gt;&lt;p&gt;原型方法比较适合于用户需求不清、需求经常变化的情况。当系统规模不是很大也不太复杂时，采用该方法比较好。&lt;/p&gt;
+&lt;img src=&#34;原型模型.png&#34; style=&#34;zoom:60%;&#34; /&gt;
+&lt;h5 id=&#34;螺旋模型&#34;&gt;螺旋模型
+&lt;/h5&gt;&lt;p&gt;螺旋模型将瀑布模型和演化模型结合起来，加入了风险分析。适用于庞大、复杂且具有高风险的系统。&lt;/p&gt;
+&lt;img src=&#34;螺旋模型.png&#34; style=&#34;zoom:48%;&#34; /&gt;
+&lt;h4 id=&#34;喷泉模型&#34;&gt;喷泉模型
+&lt;/h4&gt;&lt;p&gt;喷泉模型是一种以用户需求为动力，以对象作为驱动的模型，适合于面向对象的开发方法。&lt;/p&gt;
+&lt;p&gt;喷泉模型克服了瀑布模型不支持软件重用和多项开发活动集成的局限性&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优点
+&lt;ul&gt;
+&lt;li&gt;各个阶段没有明显界线，开发人员可以同步进行，提高软件项目的开发效率，节省开发时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;缺点
+&lt;ul&gt;
+&lt;li&gt;由于各个开发阶段是重叠的，在开发过程中需要大量的开发人员，不利于项目的管理&lt;/li&gt;
+&lt;li&gt;这种模型要求严格管理文档，使得审核难度加大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;喷泉模型.png&#34; style=&#34;zoom:48%;&#34; /&gt;
+&lt;h4 id=&#34;统一过程模型up&#34;&gt;统一过程模型（UP）
+&lt;/h4&gt;&lt;p&gt;统一过程定义了 4 个技术阶段及其制品&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;起始阶段：生命周期目标
+&lt;ul&gt;
+&lt;li&gt;专注于项目的初创活动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;精化阶段：生命周期架构
+&lt;ul&gt;
+&lt;li&gt;理解了最初的领域范围之后进行需求分析和架构演进&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;构件阶段：初始运作功能
+&lt;ul&gt;
+&lt;li&gt;关注系统的构建，产生实现模型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;移交阶段：产品发布
+&lt;ul&gt;
+&lt;li&gt;关注于软件提交方面的工作，产生软件增量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;敏捷方法&#34;&gt;敏捷方法
+&lt;/h3&gt;&lt;h4 id=&#34;极限编程xp&#34;&gt;极限编程（XP）
+&lt;/h4&gt;&lt;p&gt;极限编程由价值观、原则、实践、行为 4 个部分组成&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;4 大价值观
+&lt;ul&gt;
+&lt;li&gt;沟通、简单性、反馈、勇气&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;5 个原则
+&lt;ul&gt;
+&lt;li&gt;快速反馈、简单性假设、逐步修改、提倡更改、优质工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;12 个最佳实践
+&lt;ul&gt;
+&lt;li&gt;计划游戏（快速制定计划、随着细节不断变化而完善）、小型发布、隐喻（找到合适的比喻传达信息）、简单设计、测试先行、重构、结对编程、集体代码所有制、持续集成、每周工作 40 小时、现场客户、编码标准&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;水晶法&#34;&gt;水晶法
+&lt;/h4&gt;&lt;p&gt;水晶法认为每一个不同的项目都需要一套不同的策略、约定和方法论&lt;/p&gt;
+&lt;h4 id=&#34;并列争求法&#34;&gt;并列争求法
+&lt;/h4&gt;&lt;p&gt;并列争求法使用迭代的方法，其中，把每 30 天一次的迭代称为一个“冲刺”&lt;/p&gt;
+&lt;h4 id=&#34;自适应软件开发asd&#34;&gt;自适应软件开发（ASD）
+&lt;/h4&gt;&lt;p&gt;ASD 有 6 个基本的原则&lt;/p&gt;
+&lt;h4 id=&#34;敏捷统一过程aup&#34;&gt;敏捷统一过程（AUP）
+&lt;/h4&gt;&lt;p&gt;敏捷统一过程采用“在大型上连续”以及“在小型上迭代”的原理来构建软件系统。&lt;/p&gt;
+&lt;p&gt;每个 AUP 迭代执行以下活动：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;建模&lt;/li&gt;
+&lt;li&gt;实现&lt;/li&gt;
+&lt;li&gt;测试&lt;/li&gt;
+&lt;li&gt;部署&lt;/li&gt;
+&lt;li&gt;配置及项目管理&lt;/li&gt;
+&lt;li&gt;环境管理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;软件需求&#34;&gt;软件需求
+&lt;/h3&gt;&lt;p&gt;12 种需求&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;功能需求
+&lt;ul&gt;
+&lt;li&gt;考虑系统要做什么，何时做，在何时以及如何修改或升级&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;性能需求
+&lt;ul&gt;
+&lt;li&gt;考虑软件开发的技术性指标&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;用户或人的因素
+&lt;ul&gt;
+&lt;li&gt;考虑用户的类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;环境需求
+&lt;ul&gt;
+&lt;li&gt;考虑未来软件应用的环境，包括硬件和软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;界面需求
+&lt;ul&gt;
+&lt;li&gt;考虑来自其他系统的输入，到其他系统的输出，对数据格式的特殊规定，对数据存储介质的规定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;文档需求
+&lt;ul&gt;
+&lt;li&gt;考虑需要哪些文档，文档针对哪些读者&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数据需求
+&lt;ul&gt;
+&lt;li&gt;考虑输入、输出数据的格式，接收、发送数据的频率，数据的准确性和精度、维护所需的人力、支撑软件、开发设备等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;资源使用需求
+&lt;ul&gt;
+&lt;li&gt;考虑软件运行时所需要的数据、其他软件、内存空间等资源；软件开发、维护所需的人力、支撑软件、开发设备等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;安全保密要求
+&lt;ul&gt;
+&lt;li&gt;考虑是否需要对访问系统或系统信息加以控制，隔离用户数据的方法，用户程序如何与其他程序和操作系统隔离以及系统备份的要求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;可靠性要求
+&lt;ul&gt;
+&lt;li&gt;考虑系统的可靠性要求，系统是否必须检测和隔离错误；出错后，重启系统允许的时间等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;软件成本消耗与开发进度需求
+&lt;ul&gt;
+&lt;li&gt;考虑是否有规定的时间表，软/硬件投资有无限制等&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;其他非功能性要求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;系统设计&#34;&gt;系统设计
+&lt;/h3&gt;&lt;h4 id=&#34;概要设计&#34;&gt;概要设计
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;设计软件系统总体结构
+&lt;ul&gt;
+&lt;li&gt;将一个复杂的系统按功能划分成模块&lt;/li&gt;
+&lt;li&gt;确定每个模块的功能&lt;/li&gt;
+&lt;li&gt;确定模块之间的调用关系&lt;/li&gt;
+&lt;li&gt;确定模块之间的接口，即模块之间传递的信息&lt;/li&gt;
+&lt;li&gt;评价模块结构的质量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数据结构及数据库设计&lt;/li&gt;
+&lt;li&gt;编写概要设计文档&lt;/li&gt;
+&lt;li&gt;评审&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;详细设计&#34;&gt;详细设计
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;对每个模块进行详细的算法设计，用某种图形、表格和语言等工具将每个模块处理过程的详细算法描述出来&lt;/li&gt;
+&lt;li&gt;对模块内的数据结构进行设计&lt;/li&gt;
+&lt;li&gt;对数据库进行物理设计&lt;/li&gt;
+&lt;li&gt;其他设计&lt;/li&gt;
+&lt;li&gt;编写详细设计说明书&lt;/li&gt;
+&lt;li&gt;评审&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;系统测试&#34;&gt;系统测试
+&lt;/h3&gt;</description>
         </item>
         
     </channel>
