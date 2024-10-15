@@ -780,7 +780,100 @@
 &lt;li&gt;评审&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;系统测试&#34;&gt;系统测试
-&lt;/h3&gt;</description>
+&lt;/h3&gt;&lt;p&gt;系统测试是为了发现错误而执行程序的过程，成功的测试是发现了至今尚未发现的错误的测试&lt;/p&gt;
+&lt;p&gt;测试的目的就是希望能以最少的人力和时间发现潜在的各种错误和缺陷&lt;/p&gt;
+&lt;p&gt;基本原则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;应尽早并不断进行测试&lt;/li&gt;
+&lt;li&gt;测试工作应该避免由原开发软件的人或小组承担，一方面开发人员往往否认自己的工作，另一方面具有局限性&lt;/li&gt;
+&lt;li&gt;在设计测试方案时，不仅要确定输入数据，而且要根据系统功能确定预期输出结果&lt;/li&gt;
+&lt;li&gt;在设计测试用例时，不仅要设计有效合理的输入条件，也要包含不合理、失效的输入条件&lt;/li&gt;
+&lt;li&gt;在测试程序时，不仅要检查程序是否做了该做的事，还要检验是否做了不该做的事&lt;/li&gt;
+&lt;li&gt;严格按照测试计划来进行，避免测试的随意性&lt;/li&gt;
+&lt;li&gt;妥善保存测试计划、测试用例，作为软件文档的组成部分，为维护提供方便&lt;/li&gt;
+&lt;li&gt;测试例子都是精心设计出来的，可以为重新测试或追加测试提供方便&lt;/li&gt;
+&lt;li&gt;系统测试阶段的测试目标来自于需求分析阶段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;单元测试&#34;&gt;单元测试
+&lt;/h3&gt;&lt;p&gt;单元测试也称为模块测试，在模块编写完成且无编译错误后就可以进行&lt;/p&gt;
+&lt;h4 id=&#34;单元测试的测试内容&#34;&gt;单元测试的测试内容
+&lt;/h4&gt;&lt;p&gt;主要检查模块的以下 5 个特征：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;模块接口&lt;/li&gt;
+&lt;li&gt;局部数据结构&lt;/li&gt;
+&lt;li&gt;重要的执行路径&lt;/li&gt;
+&lt;li&gt;出错处理&lt;/li&gt;
+&lt;li&gt;边界条件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;单元测试过程&#34;&gt;单元测试过程
+&lt;/h4&gt;&lt;p&gt;由于模块不是独立运行的程序，各模块之间存在调用于被调用的关系。在对每个模块进行测试时，需要开发两种模块。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;驱动模块
+&lt;ul&gt;
+&lt;li&gt;相当于一个主程序，接收测试例子的数据，将这些数据送到测试模块，输出测试结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;桩模块
+&lt;ul&gt;
+&lt;li&gt;桩模块用来代替测试模块中所调用的子模块，其内部可进行少量的数据处理，目的是为了检验入口，输出调用和返回信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;集成测试&#34;&gt;集成测试
+&lt;/h3&gt;&lt;p&gt;集成测试就是把模块按系统设计说明书的要求组合起来进行测试&lt;/p&gt;
+&lt;p&gt;集成测试方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自顶向下集成测试（不需要驱动模块，需要桩模块）&lt;/li&gt;
+&lt;li&gt;自底向上集成测试（不需要桩模块，需要驱动模块）
+&lt;ul&gt;
+&lt;li&gt;低层构件集成为簇&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;回归测试&lt;/li&gt;
+&lt;li&gt;冒烟测试（知道有就行）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;测试方法&#34;&gt;测试方法
+&lt;/h3&gt;&lt;p&gt;软件测试方法分为静态测试和动态测试&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;静态测试
+&lt;ul&gt;
+&lt;li&gt;静态测试是指被测程序不在机器上运行，而是采用&lt;strong&gt;人工检测&lt;/strong&gt;和&lt;strong&gt;计算机辅助静态分析&lt;/strong&gt;的手段对程序进行检测&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;动态测试
+&lt;ul&gt;
+&lt;li&gt;动态测试是指通过运行程序发现错误。在对软件产品进行动态测试时可以采用黑盒测试法和白盒测试法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;黑盒测试&#34;&gt;黑盒测试
+&lt;/h3&gt;&lt;p&gt;黑盒测试也称为功能测试，在完全不考虑软件内部结构和特性的情况下，测试软件的外部特性&lt;/p&gt;
+&lt;p&gt;常用黑盒测试技术：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;等价类划分
+&lt;ul&gt;
+&lt;li&gt;将程序的输入域划分为若干等价类，然后从每个等价类中选取一个代表性数据作为测试用例（等价类分为有效等价类和无效等价类）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;边界值分析
+&lt;ul&gt;
+&lt;li&gt;边界值划分选择等价类边界的测试用例，既注重于输入条件边界，又适用于输出域测试用例&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;错误推测
+&lt;ul&gt;
+&lt;li&gt;错误推测是基于经验和直觉推测程序中所有可能存在的各种错误，从而有针对性地设计测试用例的方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;因果图
+&lt;ul&gt;
+&lt;li&gt;因果图法是从自然语言描述的程序规格说明中找出因（输入条件）和果（输出或程序状态的改变），通过因果图转换为判定表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;白盒测试&#34;&gt;白盒测试
+&lt;/h3&gt;&lt;p&gt;白盒测试也称为结构测试，根据程序的内部结构和逻辑设计测试用例，对程序的路径和过程进行测试，检查是否满足设计的需要。&lt;/p&gt;
+</description>
         </item>
         
     </channel>

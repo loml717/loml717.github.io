@@ -264,6 +264,8 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#什么是虚拟环境">什么是虚拟环境</a></li>
+    <li><a href="#venv-基本使用">venv 基本使用</a></li>
+    <li><a href="#保存和复制虚拟环境">保存和复制虚拟环境</a></li>
   </ol>
 </nav>
         </div>
@@ -363,6 +365,13 @@
 </ul>
 </li>
 </ul>
+<h2 id="venv-基本使用">venv 基本使用
+</h2><p><strong>创建名为 venvdemo 的虚拟环境：</strong><code>python -m venv venvdemo</code></p>
+<p>**启动虚拟环境：**切换到文件目录 <code>\venvdemo\Scripts</code> 下，在 cmd 或 powershell 中输入 <code>activate</code> 即可激活，此时路径前会出现这样的字样 <code>(venvdemo)</code> ，说明激活成功</p>
+<h2 id="保存和复制虚拟环境">保存和复制虚拟环境
+</h2><p><strong>输出环境中所包含的所有第三方包：</strong><code>pip freeze</code></p>
+<p>通过命令 <code>pip freeze &gt; requirements.txt</code> 将环境的所有包信息保存到文件中，即可完美保存环境</p>
+<p>**恢复环境：**创建好虚拟环境后，将 requirements.txt 文件中的所有包安装至环境即可，<code>pip install -r requirements.txt</code></p>
 
 </section>
 
