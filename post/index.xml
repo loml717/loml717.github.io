@@ -527,6 +527,100 @@
 &lt;/h4&gt;&lt;p&gt;部署图是用来对面向对象系统的物理方面建模的方法，&lt;strong&gt;展现了系统的软件和硬件之间的关系&lt;/strong&gt;，在实施阶段使用。&lt;/p&gt;
 &lt;img src=&#34;部署图.png&#34; style=&#34;zoom: 67%;&#34; /&gt;
 &lt;hr&gt;
+&lt;h2 id=&#34;结构化开发&#34;&gt;结构化开发
+&lt;/h2&gt;&lt;h3 id=&#34;耦合&#34;&gt;耦合
+&lt;/h3&gt;&lt;p&gt;耦合是模块之间的相对独立性（互相连接的紧密程度）的度量。耦合取决于各个模块之间&lt;strong&gt;接口的复杂程度&lt;/strong&gt;、&lt;strong&gt;调用模块的方式&lt;/strong&gt;以及&lt;strong&gt;通过接口的信息类&lt;/strong&gt;型等。一般模块之间可能的耦合方式有 7 种类型：&lt;/p&gt;
+&lt;img src=&#34;耦合的种类.png&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;ul&gt;
+&lt;li&gt;无直接耦合。 指两个模块之间&lt;strong&gt;没有直接的关系&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;数据耦合。指两个模块之间有调用关系， 传递的是&lt;strong&gt;简单的数据值&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;标记耦合。指两个模块之间传递的是&lt;strong&gt;数据结构&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;控制耦合。指一个模块调用另一个模块时，传递的是&lt;strong&gt;控制变量&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;外部耦合。模块间通过&lt;strong&gt;软件之外的环境联结&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;公共耦合。指&lt;strong&gt;通过一个公共数据环境相互作用&lt;/strong&gt;的那些模块间的耦合。&lt;/li&gt;
+&lt;li&gt;内容耦合。当一个模块&lt;strong&gt;直接使用另一个模块的内部数据&lt;/strong&gt;，或&lt;strong&gt;通过非正常入口转入另一个模块内部&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;内聚&#34;&gt;内聚
+&lt;/h3&gt;&lt;p&gt;内聚是对一个模块内部各个元素彼此结合的紧密程度的度量。一个内聚程度高的模块（在理想情况下）应当只做一件事。一般模块的内聚性分为 7 种类型：&lt;/p&gt;
+&lt;img src=&#34;内聚的种类.png&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;ul&gt;
+&lt;li&gt;偶然内聚（巧合内聚）。指一个模块内的各处理元素之间&lt;strong&gt;没有任何联系&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;逻辑内聚。指模块内执行若干个&lt;strong&gt;逻辑上相似&lt;/strong&gt;的功能。&lt;/li&gt;
+&lt;li&gt;时间内聚。 把需要&lt;strong&gt;同时执行&lt;/strong&gt;的动作组合在一起形成的模块。&lt;/li&gt;
+&lt;li&gt;过程内聚。指一个模块完成多个任务， 这些任务必须&lt;strong&gt;按指定的过程执行&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;通信内聚。指模块内的所有处理元素都在&lt;strong&gt;同一个数据结构上操作&lt;/strong&gt; ， 或者各处理使用相同的输入数据或者产生相同的输出数据。&lt;/li&gt;
+&lt;li&gt;顺序内聚。指一个模块中的各个处理元素都密切相关于同一功能且必须&lt;strong&gt;顺序执行&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;功能内聚。指模块内的&lt;strong&gt;所有元素共同作用完成一个功能&lt;/strong&gt;， 缺一不可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;耦合性和内聚性是模块独立性的两个定性标准， 在将软件系统划分模块时， 应尽量做到高内聚，低耦合， 提高模块的独立性。&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;系统结构设计原则&#34;&gt;系统结构设计原则
+&lt;/h3&gt;&lt;p&gt;为保证总体结构设计顺利完成， 应遵循以下几条原则：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;分解－协调原则。&lt;/li&gt;
+&lt;li&gt;自顶向下的原则。&lt;/li&gt;
+&lt;li&gt;信息隐蔽、 抽象的原则。&lt;/li&gt;
+&lt;li&gt;一致性原则。&lt;/li&gt;
+&lt;li&gt;明确性原则。
+&lt;ul&gt;
+&lt;li&gt;每个模块必须功能明确、 接口明确， 消除多重功能和无用接口（避免病态连接、降低接口复杂度）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;模块之间的耦合尽可能小， 模块的内聚度尽可能高。&lt;/li&gt;
+&lt;li&gt;模块的扇入系数和扇出系数要合理。
+&lt;ul&gt;
+&lt;li&gt;一个模块直接调用其他模块的个数称为模块的扇出系数；反之，一个模块被其他模块调用时，直接调用它的模块个数称为模块的扇入系数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;模块的规模适当&lt;/li&gt;
+&lt;li&gt;模块的作用范围应该在其控制范围内&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;系统文档&#34;&gt;系统文档
+&lt;/h3&gt;&lt;p&gt;信息系统的文档是系统建设过程的 ＂痕迹“，是系统维护人员的指南， 是开发人员与用户交流的工具。&lt;/p&gt;
+&lt;p&gt;在系统开发人员、 项目管理人员、 系统维护人员、 系统评价人员以及用户之间的沟通文档如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户与系统分析人员
+&lt;ul&gt;
+&lt;li&gt;可行性研究报告、 总体规划报告、 系统开发合同和系统方案说明书等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统开发人员与项目管理人员
+&lt;ul&gt;
+&lt;li&gt;系统开发计划（包括工作任务分解表、PERT图、 甘特图和预算分配表等）、 系统开发月报以及系统开发总结报告等项目管理文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统测试人员与系统开发人员
+&lt;ul&gt;
+&lt;li&gt;系统方案说明书、 系统开发合同、 系统设计说明书和测试计划等。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统开发人员与用户
+&lt;ul&gt;
+&lt;li&gt;用户手册和操作指南。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;系统开发人员与系统维护人员
+&lt;ul&gt;
+&lt;li&gt;系统设计说明书 和系统开发总结报告。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;用户与维修人员
+&lt;ul&gt;
+&lt;li&gt;系统运行报告和维护修改建议、技术手册。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;数据流图&#34;&gt;数据流图
+&lt;/h3&gt;&lt;h4 id=&#34;基本图形元素&#34;&gt;基本图形元素
+&lt;/h4&gt;&lt;p&gt;数据流图中的基本图形元素包括数据流、加工、数据存储和外部实体。&lt;/p&gt;
+&lt;img src=&#34;数据流图的基本图形元素.png&#34; style=&#34;zoom: 50%;&#34; /&gt;
+&lt;p&gt;&lt;em&gt;一个加工可以有多个输入数据流和多个输出数据流，但至少有一个输入数据流和一个输出数据流。&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;数据字典&#34;&gt;数据字典
+&lt;/h4&gt;&lt;p&gt;数据字典就是为数据流图中的每个数据流、 文件、 加工 ， 以及组成数据流或文件的数据项做出说明。&lt;/p&gt;
+&lt;h5 id=&#34;数据字典内容&#34;&gt;数据字典内容
+&lt;/h5&gt;&lt;p&gt;数据字典有以下4类条目： &lt;strong&gt;数据流&lt;/strong&gt;、 &lt;strong&gt;数据项&lt;/strong&gt;、 &lt;strong&gt;数据存储&lt;/strong&gt;和&lt;strong&gt;基本加工&lt;/strong&gt;。 数据项是组成数据流和数据存储的最小元素。 源点、 终点不在系统之内， 故一般不在字典中说明。&lt;/p&gt;
+&lt;h5 id=&#34;加工逻辑的描述&#34;&gt;加工逻辑的描述
+&lt;/h5&gt;&lt;p&gt;加工逻辑也称为 “ 小说明 “。 常用的加工逻辑描述方法有&lt;strong&gt;结构化语言&lt;/strong&gt;、 &lt;strong&gt;判定表&lt;/strong&gt;和&lt;strong&gt;判定树&lt;/strong&gt; 3 种。&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;软件工程&#34;&gt;软件工程
 &lt;/h2&gt;&lt;h3 id=&#34;软件过程&#34;&gt;软件过程
 &lt;/h3&gt;&lt;h4 id=&#34;能力成熟度模型cmm&#34;&gt;能力成熟度模型（CMM）
@@ -1212,6 +1306,8 @@
 &lt;h3 id=&#34;软件工具&#34;&gt;软件工具
 &lt;/h3&gt;&lt;p&gt;软件开发工具通常有需求分析工具 、 设计工具 、 编码与排错工具、 测试工具等。&lt;/p&gt;
 &lt;p&gt;软件维护工具主要有版本控制工具、 文档分析工具、 开发信息库工具、 逆向工程工具和再工程工具。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;学习视频：&lt;a class=&#34;link&#34; href=&#34;https://space.bilibili.com/91286799&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;zst_2001的个人空间-zst_2001个人主页-哔哩哔哩视频 (bilibili.com)&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
