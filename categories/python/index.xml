@@ -27,6 +27,8 @@
 &lt;p&gt;&lt;strong&gt;查看已下载模块：&lt;code&gt;conda list&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;更新模块：&lt;code&gt;conda upgrade 模块名&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;删除模块：&lt;code&gt;conda remove 模块名&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;批量导出模块：&lt;code&gt;conda list -e &amp;gt; requirements.txt&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;批量下载模块：&lt;code&gt;conda install --yes --file requirements.txt&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;pycharm中使用conda虚拟环境&#34;&gt;Pycharm中使用conda虚拟环境
 &lt;/h2&gt;&lt;p&gt;按如下步骤：&lt;/p&gt;
 &lt;img src=&#34;1.jpg&#34; style=&#34;zoom: 80%;&#34; /&gt;
