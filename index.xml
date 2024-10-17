@@ -7,7 +7,34 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>loml717</copyright>
-        <lastBuildDate>Fri, 11 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://loml717.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 17 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://loml717.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Anaconda使用</title>
+        <link>https://loml717.github.io/p/anaconda%E4%BD%BF%E7%94%A8/</link>
+        <pubDate>Thu, 17 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://loml717.github.io/p/anaconda%E4%BD%BF%E7%94%A8/</guid>
+        <description>&lt;h1 id=&#34;anaconda使用&#34;&gt;Anaconda使用
+&lt;/h1&gt;&lt;h2 id=&#34;创建环境&#34;&gt;创建环境
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;创建虚拟环境：&lt;/strong&gt;&lt;code&gt;conda create --prefix 路径\虚拟环境名称 python=指定版本号&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;如：&lt;code&gt;conda create --prefix D:\python3-10-6 python=3.10.6&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;查看环境：&lt;code&gt;conda env list&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;激活环境：&lt;code&gt;conda activate 路径\虚拟环境名称&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;退出环境：&lt;code&gt;conda deactivate&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;删除环境：&lt;code&gt;conda env remove -p 路径\虚拟环境名称&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;模块&#34;&gt;模块
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;查找模块：&lt;code&gt;conda search 模块名&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下载模块：&lt;code&gt;conda install 模块名&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;查看已下载模块：&lt;code&gt;conda list&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更新模块：&lt;code&gt;conda upgrade 模块名&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;删除模块：&lt;code&gt;conda remove 模块名&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pycharm中使用conda虚拟环境&#34;&gt;Pycharm中使用conda虚拟环境
+&lt;/h2&gt;&lt;p&gt;按如下步骤：&lt;/p&gt;
+&lt;img src=&#34;1.jpg&#34; style=&#34;zoom: 80%;&#34; /&gt;
+&lt;img src=&#34;2.jpg&#34; style=&#34;zoom:80%;&#34; /&gt;
+&lt;img src=&#34;3.jpg&#34; style=&#34;zoom:80%;&#34; /&gt;
+</description>
+        </item>
+        <item>
         <title>Python虚拟环境管理</title>
         <link>https://loml717.github.io/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/</link>
         <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
