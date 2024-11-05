@@ -37,7 +37,7 @@
 &lt;/li&gt;
 &lt;li&gt;客体
 &lt;ul&gt;
-&lt;li&gt;计算机软件著作权的主体指&lt;strong&gt;著作权法保护的计算机著作权的范围（受保护的对象）&lt;/strong&gt;
+&lt;li&gt;计算机软件著作权的客体指&lt;strong&gt;著作权法保护的计算机著作权的范围（受保护的对象）&lt;/strong&gt;
 &lt;ul&gt;
 &lt;li&gt;计算机程序：源程序和目标程序&lt;/li&gt;
 &lt;li&gt;计算机软件的文档：程序设计说明书、流程图和用户手册&lt;/li&gt;
@@ -240,10 +240,8 @@
 &lt;li&gt;该类的对象共享其静态数据成员的值&lt;/li&gt;
 &lt;li&gt;在面向对象技术中，对象具有清晰的边界、良好定义的行为、可扩展性的特性&lt;/li&gt;
 &lt;/ul&gt;
-&lt;hr&gt;
 &lt;h2 id=&#34;uml&#34;&gt;UML
-&lt;/h2&gt;&lt;p&gt;UML 统一建模语言，由 3 个要素构成，UML 的基本构造块、支配这些构造块如何放置在一起的规则、运用与整个语言的一些公共机制。&lt;/p&gt;
-&lt;p&gt;UML 的词汇表包含 3 种构造块：&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;UML 的词汇表包含 3 种构造块：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;事物
 &lt;ul&gt;
@@ -492,7 +490,7 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;结构化开发&#34;&gt;结构化开发
 &lt;/h2&gt;&lt;h3 id=&#34;耦合&#34;&gt;耦合
-&lt;/h3&gt;&lt;p&gt;耦合是模块之间的相对独立性（互相连接的紧密程度）的度量。耦合取决于各个模块之间&lt;strong&gt;接口的复杂程度&lt;/strong&gt;、&lt;strong&gt;调用模块的方式&lt;/strong&gt;以及&lt;strong&gt;通过接口的信息类&lt;/strong&gt;型等。一般模块之间可能的耦合方式有 7 种类型：&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;耦合是模块之间的相对独立性（互相连接的紧密程度）的度量。耦合取决于各个模块之间&lt;strong&gt;接口的复杂程度&lt;/strong&gt;、&lt;strong&gt;调用模块的方式&lt;/strong&gt;以及&lt;strong&gt;通过接口的信息类型&lt;/strong&gt;等。一般模块之间可能的耦合方式有 7 种类型：&lt;/p&gt;
 &lt;img src=&#34;耦合的种类.png&#34; style=&#34;zoom:80%;&#34; /&gt;
 &lt;ul&gt;
 &lt;li&gt;无直接耦合。 指两个模块之间&lt;strong&gt;没有直接的关系&lt;/strong&gt;。&lt;/li&gt;
